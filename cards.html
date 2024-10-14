@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdução ao Bootstrap</title>
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <style>
+        .bg-custom {
+            background-color: #013681; /* Cor do cabeçalho */
+        }
+
+        /* CSS para garantir que todos os cards tenham a mesma altura */
+        .card {
+            display: flex;
+            flex-direction: column; /* Fazendo o card ser flexível */
+            height: 100%; /* Garantindo que o card preencha a coluna */
+        }
+
+        .card-body {
+            flex-grow: 1; /* Fazendo o corpo do card ocupar o espaço restante */
+        }
+
+        /* CSS para garantir que os botões tenham a mesma altura */
+        .btn {
+            margin-top: auto; /* Fazendo o botão ficar no final do card */
+        }
+
+        /* CSS para garantir que todas as imagens tenham a mesma altura */
+        .card-img-top {
+            height: 200px; /* Altura fixa para as imagens */
+            object-fit: cover; /* Cobre a área mantendo a proporção */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom mb-4">
+        <a class="navbar-brand" href="index.html">CARFLIX</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Alterna navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cards.html">Cards e Alertas</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="alert alert-info" role="alert" style="text-align: center;">
+        Novidade! Confira a nossa nova linha de veículos elétricos, disponíveis agora em nosso site.
+    </div>
+    
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="card">
+                    <div class="card-header">Produto 1</div>
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0DKaAel-fvns2nw4KXSTvnNC2xnGHSu8eYA&s" alt="Carros">
+                    <div class="card-body">
+                        <h5 class="card-title">Carros</h5>
+                        <p class="card-text">
+                            Na Carflix, oferecemos uma variedade de carros projetados para atender a todas as suas necessidades. Desde compactos ágeis para o dia a dia até sedãs luxuosos para ocasiões especiais, nossos veículos combinam estilo, conforto e tecnologia avançada. Todos os modelos são equipados com recursos de segurança de última geração e eficiência de combustível, garantindo uma experiência de condução excepcional.
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="card">
+                    <div class="card-header">Produto 2</div>
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzBb3KqGXXR4asVOAvKgMxQ_YWX1IzvQwm3g&s" alt="Caminhões">
+                    <div class="card-body">
+                        <h5 class="card-title">Caminhões</h5>
+                        <p class="card-text">
+                            Nossos caminhões são a escolha ideal para quem precisa de força e confiabilidade no transporte de cargas. Com opções que variam de caminhões leves a pesados, a Carflix garante veículos robustos e eficientes, projetados para suportar as demandas do dia a dia. Cada modelo prioriza a durabilidade e a economia, ajudando sua empresa a manter a produtividade nas estradas.
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="card">
+                    <div class="card-header">Produto 3</div>
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEFsICCYo3znZthyU48UfHyoMmL9SNoP-1UA&s" alt="Motos">
+                    <div class="card-body">
+                        <h5 class="card-title">Motos</h5>
+                        <p class="card-text">
+                            Explore nossa linha de motocicletas que unem desempenho e estilo. Na Carflix, disponibilizamos modelos para todos os níveis de habilidade, desde motos urbanas ágeis até potentes máquinas de alta cilindrada. Cada moto é projetada para oferecer uma experiência emocionante e segura, perfeita para quem busca liberdade nas estradas.
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="alert alert-warning" role="alert" style="text-align: center;">
+            Atenção! Os estoques de alguns modelos estão baixos. Garanta já o seu!
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
